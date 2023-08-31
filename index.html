@@ -12,19 +12,21 @@
 </head>
 <body>
    <header>
-   
+
     <h1 class ="logo">F<span>∞</span>dMood</h1>
-    <ul class="navmenu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Page</a></li>
-    </ul>
+    <div class="navmenu">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Menu</a>
+        <a href="#">Blog</a>
+        <a href="#">Page</a>
+    </div>
 
     <div class="nav-icon">
         <a href="#" class="btn">Contact</a>
-        <div class="bx bx-menu" id="menu=icon"></div>
+        <div class="bx bx-menu" id="menu-icon" onclick="respnav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
    </header>
 
@@ -47,7 +49,9 @@
             <div class="home-img">
                 <img src="./img/baner.png" alt="y">
             </div> 
-            
-   <!-- </section>
+
+</section>
+<script src="index.js"></script>
 </body>
 </html>
+

@@ -2,6 +2,28 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    position: fixed;
+    width:100%;
+    top:0;
+    right: 0;
+    /* z-index: 1000; */
+    display: absolute;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+
+
+/* extra */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     /* font-family: 'Lato', sans-serif; */
 }
 
@@ -21,7 +43,7 @@ header{
 
 .logo span{
     color: red;
-    
+
 }
 
 .navmenu{
@@ -88,6 +110,10 @@ section{
     gap:2rem;
 }
 
+#menu-icon{
+    visibility: hidden;
+}
+
 .home-img img{
     max-width: 100%;
     width: 100%;
@@ -98,8 +124,8 @@ section{
     color:rgb(231, 128, 128);
     font-size: 20px;
     font-weight: 600;
-  
-    
+
+
 }
 
 .home-text h2{
@@ -138,7 +164,7 @@ section{
     background-color: red;
     text-decoration: none;
     padding: 12px 20px;
-    
+
 }
 
 .main-btn .btn1:hover{
@@ -168,9 +194,68 @@ section{
      justify-content: center;
      border-radius: 50%;
      margin-right: 15px;
-    
+
 }
 
 .btn2 span:hover{
     transform:translateY(.5px)
+}
+
+@media(max-width:890px){
+    header{
+        
+        padding: 20px 3%;
+        transition: .3s;
+        background:#fff;
+        box-shadow: 0 0 10px rgb(0 0 0 /10%);
+    }
+    .home{
+        grid-template-columns:1fr;
+        height:100%
+    }
+
+    .home-text{
+        padding: 50px;
+        text-align: center;
+    }
+    #menu-icon{
+        visibility: visible;
+        display:block;
+        
+    }
+
+    .navmenu.responsive {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 206px;
+        height: 276px;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 21px 22px;
+        transition: all .42s ease;
+    }
+    .navmenu.responsive a{
+        display: block;
+
+    }
+
+    .navmenu a{
+        display: block;
+        margin: 3px;
+        transform: all .42s ease;
+    }
+
+    .navmenu a:hover{
+        color:#fff;
+        transform:translate(-5px)
+    }
+
+    .navmenu a{
+        display: none;
+    }
+
+
 }
